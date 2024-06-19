@@ -1,0 +1,24 @@
+{
+  "name": "nodewithjenkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyRoopam9599/NodeWithJenkins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TyRoopam9599/NodeWithJenkins/issues"
+  },
+  "homepage": "https://github.com/TyRoopam9599/NodeWithJenkins#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

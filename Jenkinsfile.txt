@@ -1,9 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('Build') { 
+        stage('Check Git') {
             steps {
-                sh 'npm install' 
+                sh 'git --version'
+                sh 'git remote -v'
+                sh 'git branch -a'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm install'
             }
         }
     }

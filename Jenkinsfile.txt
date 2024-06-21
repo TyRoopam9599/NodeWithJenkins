@@ -1,17 +1,1 @@
-pipeline {
-    agent any
-    stages {
-        stage('Check Git') {
-            steps {
-                sh 'git --version'
-                sh 'git remote -v'
-                sh 'git branch -a'
-            }
-        }
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-    }
-}
+git branch: 'main', credentialsId: '8c1d7499-6ba7-49be-ab1b-a50339b7dd33', url: 'https://github.com/TyRoopam9599/NodeWithJenkins.git'

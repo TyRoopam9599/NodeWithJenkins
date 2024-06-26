@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Check Git') {
             steps {
-                sh 'git --version'
                 sh 'git remote -v'
                 sh 'git branch -a'
             }
